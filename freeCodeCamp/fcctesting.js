@@ -50,6 +50,7 @@ module.exports = function (app) {
       res.setHeader('Access-Control-Allow-Credentials', true);
       next();
   });
+  console.log();
   
   app.route('/_api/server.js')
     .get(function(req, res, next) {
